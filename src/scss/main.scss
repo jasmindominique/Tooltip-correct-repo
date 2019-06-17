@@ -1,0 +1,148 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+@import "_variables";
+
+
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-family: sans-serif;
+}
+
+
+nav {
+
+	li{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px 0;
+	}
+
+	a{
+	color: $accent-color;
+	margin: 15px;
+	text-decoration: none;
+	}
+	
+}
+
+/* 2. Content ================================= */
+
+.content {
+	width: 75%;
+	margin: 100px;
+	p {
+		line-height: 1.5em;
+		margin-bottom: 0.5em;
+		em {
+			font-style: italic;
+			font-weight: bold;
+		}
+	}
+}
+
+body {
+	background: $primary-color;
+	font-family: 'Varela Round', sans serif;
+	line-height: 1.6;
+
+}
+
+a{
+	color: $secondary-color;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+p{
+	font-size: .9em;
+}
+
+
+h1{
+	font-size: 1.35em;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0 30px;
+
+}
+
+nav {
+
+	li{
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px 0;
+	}
+
+	a{
+	color: $secondary-color;
+	margin: 15px;
+	text-decoration: none;
+	}
+	
+}
+
+
+footer{
+	background: #d9e4ea;
+	text-align: center;
+	padding: 30px;
+	margin-top: 40px;
+}
+
+/* 2. Content ================================= */
+
+.main-header{
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: 768px){
+
+		display: flex;
+		align-items: center;
+	}
+
+	@media screen and (min-width: 1220px){
+
+    flex-direction: row;
+    justify-content: space-around;
+	}
+
+}
+
+
+
+
+	
+@media screen and (min-width: 768px){
+
+	.row, nav ul{
+		display: flex;
+	}
+
+	.row{
+		margin: 0 5em;
+	}
+}
+	
